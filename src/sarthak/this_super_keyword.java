@@ -31,10 +31,11 @@ class doclass extends ekclass{
 public class this_super_keyword {
     public static void main(String[] args) {
 
-        ekclass e=new ekclass(65);
-        System.out.println("the value is:"+e.getA());
+        //ekclass e=new ekclass(20);
+       // System.out.println("the value is:"+e.getA());
 
         doclass d=new doclass(200);
+        System.out.println(d.getA());
 
 
 
