@@ -1,5 +1,5 @@
 package sarthak;
-
+// interface implementation
 interface cycle{
     void blowHorn();
     void applyBreak();
