@@ -11,11 +11,15 @@ interface call{
     default void greet(){
         System.out.println("Good morning baby...");
     }
+
+    String[] available_network();
 }
 class MyCellPhone{
     void gamePlay(){
         System.out.println("me saanp wala game khel rha hu...");
     }
+
+
 }
 
 class MySmartPhone extends MyCellPhone implements call{
@@ -24,6 +28,12 @@ class MySmartPhone extends MyCellPhone implements call{
     }
     public void msgme(){
         System.out.println("muze message kr bhai...");
+    }
+
+    public String[] available_network(){
+        System.out.println("Available networks are...");
+        String[] myNetworks={"sarthak", "sunny", "jaya", "giri", "baghi", "chaitya", "akki"};
+        return myNetworks;
     }
 }
 
@@ -34,5 +44,12 @@ public class default_methods_interfaces {
         apple.callme();
         apple.msgme();
         apple.gamePlay();
+
+
+        String[] arr=apple.available_network();
+        for (String item:arr) {
+            System.out.println(item);
+        }
+
     }
 }
